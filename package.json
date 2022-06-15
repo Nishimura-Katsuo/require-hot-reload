@@ -1,0 +1,7 @@
+{
+  "name": "require-hot-reload",
+  "version": "0.1.0",
+  "description": "Enables hot reload functionality for modules loaded by require.",
+  "main": "index.js",
+  "license": "MIT"
+}
