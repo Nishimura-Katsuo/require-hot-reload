@@ -1,7 +1,16 @@
 {
-  "name": "require-hot-reload",
+  "name": "@nishimura-katsuo/require-hot-reload",
   "version": "0.1.0",
   "description": "Enables hot reload functionality for modules loaded by require.",
   "main": "index.js",
-  "license": "MIT"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nishimura-Katsuo/require-hot-reload.git"
+  },
+  "author": "Nishimura-Katsuo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nishimura-Katsuo/require-hot-reload/issues"
+  },
+  "homepage": "https://github.com/Nishimura-Katsuo/require-hot-reload#readme"
 }
