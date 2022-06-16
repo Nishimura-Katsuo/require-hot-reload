@@ -1,16 +1,17 @@
 const fs = require('fs');
 const mod = require('module');
+const path = require('path');
 
 const requirearchy = [];
 const requireParents = {};
 const watching = {};
 
-function requireWithHotReload(...args) {
-  let modulePath = require.resolve(args[0]);
+function requireWithHotReload(id) {
+  let modulePath = require.resolve(this.path, id);
 
   requirearchy.push(modulePath);
 
-  let ret = mod.prototype._require.apply(this, args);
+  let ret = mod.prototype._require.call(this, id);
   requirearchy.pop();
 
   if (ret && fs.existsSync(modulePath)) {
