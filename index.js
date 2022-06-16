@@ -7,7 +7,7 @@ const requireParents = {};
 const watching = {};
 
 function requireWithHotReload(id) {
-  let modulePath = require.resolve(this.path, id);
+  let modulePath = mod._resolveFilename(id, this, false);
 
   requirearchy.push(modulePath);
 
