@@ -1,6 +1,6 @@
 {
   "name": "@nishimura-katsuo/require-hot-reload",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Enables hot reload functionality for modules loaded by require.",
   "main": "index.js",
   "repository": {
